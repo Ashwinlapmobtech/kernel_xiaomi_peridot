@@ -25,10 +25,10 @@ jobs:
         sudo apt-get install -y build-essential git ccache bc flex bison libssl-dev \
           libelf-dev dwarves python3 wget gcc-aarch64-linux-gnu
 
-    - name: Download Clang from Google Drive
+    - name: Download Clang from Limewire
       run: |
         mkdir -p prebuilts/clang/host/linux-x86/clang-r450784d
-        wget --no-check-certificate "https://drive.google.com/uc?export=download&id=1fY3_y3GRwcBKD87K_AVaSblhwIgBVvl0" -O clang.tar.gz
+        wget --no-check-certificate "https://limewire.com/decrypt/download?downloadId=12b47313-5fbf-4d95-b0be-73f6f39dd1fd" -O clang.tar.gz
         tar -xf clang.tar.gz -C prebuilts/clang/host/linux-x86/clang-r450784d
 
     - name: Configure kernel
